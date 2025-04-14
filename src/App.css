@@ -1,7 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #f3efe5, #6b37b4);
+  color: #333;
+}
+
+p {
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -15,4 +18,38 @@ form {
 input, button {
   padding: 10px;
   margin: 10px;
+}
+
+.countdown-display {
+  font-size: 2rem;
+  font-family: 'Courier New', monospace;
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.motivation {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #6518bd;
+  animation: popIn 0.5s ease-in-out;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
